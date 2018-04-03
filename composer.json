@@ -1,0 +1,23 @@
+{
+  "name": "nadya/plugin",
+  "description": "Some test description",
+  "version": "1.0.0",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "ComposerPlugin"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "composer/composer": "@stable",
+    "nadya/ece-plugin": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nadya\\": "src/"
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
